@@ -3,6 +3,9 @@
 
 
 //styles for custom device width
-@include mq($max-width: 1000px) {
+
+
+//ширина на якій починаються проблеми
+@include mq($max-width: 1380px) {
   
 }
