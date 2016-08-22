@@ -319,6 +319,9 @@ footer .center-block .table {
 			}
 		}
 	}
+	.multislider-tabs{
+		left: 80px;
+	}
 	.projects-slider-wrap .info-block{
 		right: 0;
 		width: 100%;
@@ -357,5 +360,83 @@ footer .center-block .table {
 	.defa-block{
 		width: 22.1%;
 	}
+
+
+	/* -------- -------- ------- -------       inner pages        ------- ------- ------- -------*/
+	
+	.contacts-block{
+		overflow: visible;
+		.btn_blue{
+			right: -50px;
+		}
+	}
+	.contacts-block-bg{
+		left: 0;
+		right: 30px;
+		width: auto;
+		box-sizing: border-box;
+	}
+	.btn.btn_mirr{
+		padding: 27px 85px 30px 5px;
+		span{
+			right: 0;
+			left: auto;
+		}
+	}
+	.desc-tabs__tabs-line{
+		display: table;
+		width: 100%;
+	}
+		.desc-tabs__tab{
+			display: table-cell;
+			vertical-align: middle;
+			width: 20%;
+			font-size: 16px;
+			line-height: 20px;
+			border-left: 2px solid #f2f7fc;
+			padding: 0 20px;
+			&:first-child{
+				border-left: 0;
+			}
+		}
+	.desc-tabs__cont-wrap{
+		padding: 0 50px;
+	}
+
+	.order-form-wrap{
+		padding-right: 270px;
+	}
+	.order-form-bg{
+		right: -50px;
+	}
 }
 
+@include mq($max-width: 1339px){
+	.center-block-min{
+		max-width: none;
+		padding: 0 50px;
+	}
+	.top-promo-blue{
+		.center-block-min{
+			padding-right: 0;
+		}
+	}
+	.order-form{
+		padding: 50px 50px;
+	}
+	.smpl-txt-sldr-count-wrap{
+		margin: 0 -50px 40px;
+		overflow: hidden;
+	}
+		.smpl-txt-sldr-count{
+			&:first-child{
+				float: left;
+			}
+			&:last-child{
+				float: right;
+			}
+		}
+	.smpl-txt-sldr-count__item{
+		padding: 40px 50px 15px;
+	}
+}
