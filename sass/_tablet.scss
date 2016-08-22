@@ -428,6 +428,9 @@ footer .center-block .table {
 	.crumbs{
 		padding-left: 50px;
 	}
+		.center-block-min .crumbs{
+			padding-left: 0;
+		}
 	.anchors-menu-wrap{
 		margin: 0 -50px 50px;
 		&.fixed{
