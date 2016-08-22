@@ -225,7 +225,7 @@ $(function() {
 	// });
 		// init .example-slider slick-slider
 	$(".example-slider").slick({
-		autoplay: true,
+		//autoplay: true,
 		autoplaySpeed: 3000,
 		speed: 500,
 		slidesToShow: 1,
@@ -846,8 +846,13 @@ function topPromoW() {
 	if($(".top-promo").length) {
 		var cbW = $(".center-block").width();
 		var winW = $(window).width();
-		var targetW = winW - (winW - cbW) / 2 - 174;
-		console.log(winW - (winW - cbW) / 2);
+		if (winW > 1439) {
+			var targetW = winW - (winW - cbW) / 2 - 174;
+		} 
+		else {
+			var targetW = winW - (winW - cbW) / 2 - 50;
+		}
+		
 		$(".top-promo").width(targetW);
 	}
 }
