@@ -6539,6 +6539,55 @@ footer .center-block .table {
 .gm-style > div:nth-child(8) {
   display: none; }
 
+footer .center-block .table {
+  position: relative;
+  display: block;
+  overflow: hidden; }
+
+.footer-box {
+  position: relative;
+  float: left;
+  width: 42.5%; }
+  .footer-box .foot-li-1, .footer-box .foot-li-1:last-child {
+    width: 50%; }
+
+.foot-li-1 {
+  position: relative;
+  display: block;
+  float: left;
+  width: 21.25%; }
+  .foot-li-1:last-child {
+    width: 13.75%; }
+
+.footer-bottom {
+  position: relative;
+  overflow: hidden; }
+
+.footer-copyright {
+  position: relative;
+  float: left;
+  width: 85%;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0; }
+
+.defa-block {
+  position: relative;
+  float: left;
+  width: 15%;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: normal; }
+
+.icon-defa {
+  margin-top: 11px;
+  font-size: 28px;
+  opacity: 0.5;
+  transition: 0.2s 0.2s linear; }
+
+.icon-defa:hover {
+  opacity: 1; }
+
 .navbar-toggle {
   display: none;
   position: relative;
@@ -6738,4 +6787,17 @@ footer .center-block .table {
     margin-bottom: 22px; }
   .col-2 {
     float: none;
-    width: auto; } }
+    width: auto; }
+  footer {
+    height: 650px; }
+  .footer-box {
+    width: 38.95%; }
+    .footer-box .foot-li-1, .footer-box .foot-li-1:last-child {
+      width: 100%;
+      margin-bottom: 30px; }
+  .foot-li-1:last-child {
+    width: 22.1%; }
+  .footer-copyright {
+    width: 77.9%; }
+  .defa-block {
+    width: 22.1%; } }

@@ -1,6 +1,61 @@
 // Normally mainpage media styles
 // You can read about usage in https://github.com/paranoida/sass-mediaqueries 
 
+footer .center-block .table {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.footer-box{
+	position: relative;
+	float: left;
+	width: 42.5%;
+	.foot-li-1, .foot-li-1:last-child{
+		width: 50%;
+	}
+}
+.foot-li-1 {
+	position: relative;
+	display: block;
+	float: left;
+	width: 21.25%;
+	&:last-child{
+		width: 13.75%;
+	}
+}
+.footer-bottom{
+	position: relative;
+	overflow: hidden;
+}
+.footer-copyright {
+	position: relative;
+	float: left;
+	width: 85%;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 0;
+}
+.defa-block{
+	position: relative;
+	float: left;
+	width: 15%;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: normal;
+}
+.icon-defa{
+	margin-top: 11px;
+	font-size: 28px;
+	opacity: 0.5;
+	-webkit-transition: 0.2s 0.2s linear;
+	-moz-transition: 0.2s 0.2s linear;
+	-ms-transition: 0.2s 0.2s linear;
+	-o-transition: 0.2s 0.2s linear;
+	transition: 0.2s 0.2s linear;
+}
+.icon-defa:hover {
+	opacity: 1;
+}
 
 //styles for custom device width
 
@@ -283,5 +338,24 @@
 			float: none;
 			width: auto;
 		}
+	footer{
+		height: 650px;
+	}
+	.footer-box{
+		width: 38.95%;
+		.foot-li-1, .foot-li-1:last-child{
+			width: 100%;
+			margin-bottom: 30px;
+		}
+	}
+	.foot-li-1:last-child{
+		width: 22.1%;
+	}
+	.footer-copyright {
+		width: 77.9%;
+	}
+	.defa-block{
+		width: 22.1%;
+	}
 }
 
