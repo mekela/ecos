@@ -6652,7 +6652,8 @@ footer .center-block .table {
     height: 120px;
     padding-bottom: 20px; }
     .header.fixed {
-      height: 65px; }
+      height: 65px;
+      z-index: 12000; }
       .header.fixed .head-icons-wrap {
         margin-top: 20px; }
       .header.fixed .navbar-toggle {
@@ -6784,13 +6785,13 @@ footer .center-block .table {
     font-size: 14px; }
     .main-description p {
       margin-bottom: 20px; }
-  .col-1 {
-    float: none;
-    width: auto;
-    margin-bottom: 22px; }
-  .col-2 {
-    float: none;
-    width: auto; }
+    .main-description .col-1 {
+      float: none;
+      width: auto;
+      margin-bottom: 22px; }
+    .main-description .col-2 {
+      float: none;
+      width: auto; }
   footer {
     height: 650px; }
   .footer-box {
@@ -6837,7 +6838,55 @@ footer .center-block .table {
   .order-form-wrap {
     padding-right: 270px; }
   .order-form-bg {
-    right: -50px; } }
+    right: -50px; }
+  .top-promo {
+    padding: 80px 0; }
+    .top-promo .top-promo-bg {
+      left: 0; }
+    .top-promo .info-block {
+      margin-left: 0; }
+      .top-promo .info-block .text-wrap {
+        padding: 40px 50px; }
+      .top-promo .info-block .title {
+        font-size: 36px; }
+  .crumbs {
+    padding-left: 50px; }
+  .anchors-menu-wrap {
+    margin: 0 -50px 50px; }
+    .anchors-menu-wrap.fixed {
+      top: 65px;
+      margin: 0 0;
+      z-index: 11000; }
+  .anchors-menu a {
+    font-weight: 400; }
+  .example-blocks {
+    margin: 0 -50px 40px; }
+  .btn.btn_mirr {
+    padding: 27px 5px 30px 85px; }
+  .btn.btn_mirr span {
+    right: auto;
+    left: 0; }
+  .example-block2 .btn {
+    margin-left: 0; }
+  .example-block2.example-block2_mirr .example-block2-bg {
+    left: auto;
+    right: 260px; }
+  .example-block2.example-block2_mirr .btn {
+    margin-right: 0; }
+  .example-block1-bg {
+    right: 260px; }
+  .example-block2-bg {
+    left: 260px; }
+  .example-slider-wrap {
+    margin: 0 -50px 80px 50px; }
+  .example-slider .icon-long-arr-l {
+    right: 160px; }
+  .example-slider .slick-counter {
+    right: 80px; }
+  .example-slider .icon-long-arr-r {
+    right: 0; }
+  .example-slider__item p {
+    width: auto; } }
 
 @media only screen and (max-width: 1339px) {
   .center-block-min {
