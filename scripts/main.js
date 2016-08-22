@@ -606,8 +606,11 @@ $(function() {
    			$(".header").removeClass("show-phone");
    	});
 
+
+
+
 	//---------------------------------------         navbar
-   	$('.navbar-toggle').click(function(event) {
+   	/*$('.navbar-toggle').click(function(event) {
    		if (!$(this).hasClass('active')) {
    			$(this).addClass('active');
    			$(this).parents('.header').find('.main-menu').slideDown(300);
@@ -616,25 +619,48 @@ $(function() {
    			$(this).removeClass('active');
    			$(this).parents('.header').find('.main-menu').slideUp(300);
    		}
-   	});
-   	$('body').delegate('.header.fixed .navbar-toggle', 'click', function() {
+   	});*/
+   	$('body').delegate('.header .navbar-toggle', 'click', function() {
    		if (!$(this).hasClass('active')) {
    			$(this).addClass('active');
    			$(this).parents('.header').find('.main-menu').slideDown(300);
    		} 
    		else {
-   			$(this).removeClass('active');
-   			$(this).parents('.header').find('.main-menu').slideUp(300);
+   			$('.header .navbar-toggle').removeClass('active');
+   			$('.header .main-menu').slideUp(300);
    		}
 	});
 
-   	//---------------------------------------         navbar
+   	//---------------------------------------         main-menu
    	$('.main-menu li').each(function(index, el) {
    		if ($(this).find('ul').length > 0) {
    			$(this).append('<div class="menu-arr"></div>');
    		}
-   		
    	});
+   	$('.menu-arr').click(function(event) {
+   		var $parent = $(this).parent('li');
+   		if (!$parent.hasClass('active')) {
+   			$parent.addClass('active');
+   			if ($parent.find('.submenu-wrap').length > 0) {
+   				$parent.find('.submenu-wrap').slideDown(300);
+   			} 
+   			else {
+   				$parent.find('ul').slideDown(300);
+   			}
+   		}
+   		else{
+   			$parent.removeClass('active');
+   			if ($parent.find('.submenu-wrap').length > 0) {
+   				$parent.find('.submenu-wrap').slideUp(300);
+   			} 
+   			else {
+   				$parent.find('ul').slideUp(300);
+   			}
+   		} 
+   	});
+
+
+
 
 });
 function setInfoDataSlider(slider, object) {

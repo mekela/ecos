@@ -74,8 +74,10 @@
 }
 
 //ширина на якій починаються проблеми
-@include mq($max-width: 1380px) {
-  
+@include mq($min-width: 1440px) {
+	.main-menu > li:hover .submenu-wrap {
+	  display: block;
+	}
 }
 
 
@@ -101,6 +103,10 @@
 			}
 			.main-menu{
 				top: 65px;
+				margin-top: 0; 
+			}
+			.submenu-wrap{
+				top: auto;
 			}
 		}
 	}
@@ -164,6 +170,13 @@
 						text-decoration: underline;
 					}
 				}
+				&.active .submenu-wrap + .menu-arr{
+					-webkit-transform: rotate(180deg);
+					-moz-transform: rotate(180deg);
+					-o-transform: rotate(180deg);
+					-ms-transform: rotate(180deg);
+					transform: rotate(180deg);
+				}
 			}
 		}
 		.submenu-wrap{
@@ -201,6 +214,16 @@
 				background: #4597c2;
 				padding: 15px 0;
 			}
+			.menu-arr{
+				top: 7px;
+			}
+			&.active .menu-arr{
+				-webkit-transform: rotate(180deg);
+				-moz-transform: rotate(180deg);
+				-o-transform: rotate(180deg);
+				-ms-transform: rotate(180deg);
+				transform: rotate(180deg);
+			}
 		}
 		.submenu-li-2{
 			margin: 0;
@@ -212,6 +235,9 @@
 					color: #fff;
 					text-decoration: underline;
 				}
+			}
+			&:last-child{
+				margin-bottom: 0;
 			}
 		}
 		.menu-arr{
