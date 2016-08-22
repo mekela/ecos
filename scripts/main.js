@@ -143,6 +143,11 @@ $(function() {
 	$(document).on("click", ".head-search-form .icon-close", function() {
 		$(".head-search-form").removeClass("active");
 	});
+
+	$(document).on("click", ".load_more_text", function() {
+		$(".main-description").addClass("active");
+	});
+
 	// scroll header
     headerScroll();
     $(window).scroll(function() {
