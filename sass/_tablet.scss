@@ -225,6 +225,9 @@ footer .center-block .table {
 						color: #fff;
 						text-decoration: underline;
 					}
+					&.active{
+						color: #fff;
+					}
 				}
 				&.active .submenu-wrap + .menu-arr{
 					-webkit-transform: rotate(180deg);
@@ -523,4 +526,37 @@ footer .center-block .table {
 	.smpl-txt-sldr-count__item{
 		padding: 40px 50px 15px;
 	}
+	.solutions-list__img{
+		width: 440px;
+	}
+	.solutions-list__item{
+		padding-left: 480px;
+		.btn{
+			left: 480px;
+		}
+	}
+	.press-slider-wrap{
+		&.fix-height{
+			min-height: 380px;
+		}
+		h3{
+			color: #58b6e7;
+		}
+	}
+	.press-slider-switch{
+		top: 54px;
+	}
+	.press-slider__link-all{
+		top: 54px;
+	}
+	.video-slider__item-wrap{
+		padding-right: 40px;
+	}
+		.video-slider-img{
+			height: 140px;
+		}
+		.video-slider-title{
+			font-size: 14px;
+			line-height: 18px;
+		}
 }
