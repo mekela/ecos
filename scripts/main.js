@@ -354,8 +354,38 @@ $(function() {
 		dots: false,
 		arrows: true,
 		prevArrow: '<span class="icon-long-arr-l"></span>',
-		nextArrow: '<span class="icon-long-arr-r"></span>'
+		nextArrow: '<span class="icon-long-arr-r"></span>',
+		responsive: [
+		    {
+		      breakpoint: 1440,
+		      settings: {
+		        slidesToShow: 3,
+		      }
+		    },
+		    {
+		      breakpoint: 1024,
+		      settings: {
+		        slidesToShow: 2,
+		      }
+		    },
+		    {
+		      breakpoint: 768,
+		      settings: {
+		        slidesToShow: 1,
+		      }
+		    }
+		]
 	});
+	/*$(".icons-slider").each(function() {
+		var slider = $(this);
+		var counterBlock = $("<div class='slick-counter'></div>");
+		var allItems = slider.find(".icons-slider-item:not(.slick-cloned):last").data("slick-index") + 1;
+		var nowItem = slider.find(".icons-slider-item.slick-current").data("slick-index");
+		nowItem++;
+		var resultText = nowItem + " / " + allItems;
+		counterBlock.text(resultText);
+		slider.append(counterBlock);
+	});*/
 	// switch .reviews-list__item
 	$(".reviews-list__link").on("click", function() {
 		$(this).closest(".reviews-list__item-wrap").toggleClass("show");
@@ -684,6 +714,26 @@ $(function() {
    		smplSlider();
    	});
    	smplSlider();
+
+
+   	function iconsSliders(){
+   		var $window = $(window).width(),
+   			iconsWrap = $('.icons-sliders-wrap').width();
+   		if ($window < 1340 && $window > 1023) {
+   			$('.icons-sliders-wrap .press-slider-wrap').css({
+   				'width': (iconsWrap - 50)/2,
+   			});
+   		} 
+   		else {
+   			$('.icons-sliders-wrap .press-slider-wrap').css({
+   				'width': '',
+   			});
+   		}
+   	}
+   	$(window).resize(function(event) {
+   		iconsSliders();
+   	});
+   	iconsSliders();
 
 
 

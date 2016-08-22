@@ -6884,7 +6884,9 @@ footer .center-block .table {
     height: 140px; }
   .video-slider-title {
     font-size: 14px;
-    line-height: 18px; } }
+    line-height: 18px; }
+  .icons-sliders-wrap .press-slider-wrap {
+    width: 440px; } }
 
 .load_more_text {
   display: none; }
