@@ -6853,6 +6853,8 @@ footer .center-block .table {
     padding: 0 50px; }
   .top-promo-blue .center-block-min {
     padding-right: 0; }
+  .top-promo-blue .cell:last-child img {
+    right: -40px; }
   .order-form {
     padding: 50px 50px; }
   .smpl-txt-sldr-count-wrap {
@@ -6886,7 +6888,25 @@ footer .center-block .table {
     font-size: 14px;
     line-height: 18px; }
   .icons-sliders-wrap .press-slider-wrap {
-    width: 440px; } }
+    width: 440px; }
+  .video-list {
+    margin-bottom: 20px; }
+  .video-list__item {
+    width: 48%; }
+  .video-list__img {
+    height: 245px; }
+  .video-list__title {
+    font-size: 14px;
+    line-height: 18px; }
+  .video-list__info .cell {
+    height: 80px;
+    padding: 15px 20px; }
+  .video-list__date {
+    bottom: 3px;
+    width: 100px;
+    text-align: right; }
+  .pagination a {
+    letter-spacing: 0; } }
 
 .load_more_text {
   display: none; }

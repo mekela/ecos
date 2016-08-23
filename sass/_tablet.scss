@@ -507,6 +507,13 @@ footer .center-block .table {
 		.center-block-min{
 			padding-right: 0;
 		}
+		.cell{
+			&:last-child{
+				img{
+					right: -40px;
+				}
+			}
+		}
 	}
 	.order-form{
 		padding: 50px 50px;
@@ -562,6 +569,35 @@ footer .center-block .table {
 	.icons-sliders-wrap{
 		.press-slider-wrap{
 			width: 440px;
+		}
+	}
+	.video-list{
+		margin-bottom: 20px;
+	}
+		.video-list__item{
+			width: 48%;
+		}
+			.video-list__img{
+				height: 245px;
+			}
+			.video-list__title{
+				font-size: 14px;
+				line-height: 18px;
+			}
+			.video-list__info{
+				.cell{
+					height: 80px;
+					padding: 15px 20px;
+				}
+			}
+			.video-list__date{
+				bottom: 3px;
+				width: 100px;
+				text-align: right;
+			}
+	.pagination{
+		a{
+			letter-spacing: 0;
 		}
 	}
 }
