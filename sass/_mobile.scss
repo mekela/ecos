@@ -6,8 +6,14 @@
 .load_more_text{
 	display: none;
 }
+.show_mobile{
+	display: none;
+}
 
 @include mq($max-width: 768px) {
+.show_mobile{
+	display: block;
+}
   .phone-num-head, .head-icons-wrap .lang, .head-icons-wrap .icon-account{
   	display: none;
   }
@@ -231,6 +237,164 @@
   	.multislider-tabs{
   		left: 0;
   	}
+	
+
+	//product
+  	.top-promo-blue .crumbs{
+  		display: none;
+  	}
+  	.top-promo-blue{
+  		background:#fff;
+  		padding: 0;
+  		position: relative;
+  		overflow: hidden;
+  		height: 600px;
+  		margin-bottom: 20px;
+  		&.active{
+  			height: auto;
+  			margin-bottom: 20px;
+  			.load_more_text{
+  				display: none;
+  			}
+  		}
+  		.center-block-min{
+  			padding: 0;
+  		}
+  		.table{
+  			margin-top: 0;
+  			.cell{
+  				margin-right: 0;
+  				padding-right: 0;
+  				img{
+  					width: 100%;
+  					margin-bottom: 20px;
+  				}
+  				&:last-child{
+  					display: none;
+  				}
+  				h1{
+  					padding: 0 10px;
+  					font-size: 24px;
+  					color: #3d5567;
+  					font-weight: bold;
+  					margin-bottom: 15px;
+  				}
+  				p{
+  					padding: 0 10px;
+  					margin-bottom: 10px;
+  					font-size: 14px;
+  					color: #3d5567;
+  				}
+  			}
+  		}
+  	}
+ 	.center-block-min{
+ 		padding: 0;
+ 	}	
+ 	.contacts-block-bg{
+ 		display: none;
+ 	}
+ 	.contacts-block{
+ 		width: 100%;
+ 		background:#fff;
+ 		padding: 24px 10px;
+ 		margin-bottom: 100px;
+ 		.col-1, .col-2{
+ 			width: 100%;
+ 			float: none;
+ 		}
+ 	}
+ 		.contacts-block .btn_blue{
+ 			top: auto;
+ 			bottom: -80px;
+ 			right: 0;
+ 			left: auto;
+ 		}
+ 	.smpl-txt-sldr-count{
+ 		float: none;
+ 		width: 100%;
+ 		margin: 0 0 20px 0;
+ 	}
+ 		.smpl-txt-sldr-count__item{
+ 			padding-top: 25px;
+ 			padding-bottom: 25px;
+ 			width: auto;
+ 			padding-left: 0;
+ 			h1, div,p{
+ 				padding: 0 10px;
+ 			}
+ 		}
+ 	.smpl-txt-sldr-count-wrap{
+ 		margin-left: 0;
+ 		margin-right: 0;
+ 	}
+ 	.order-form-bg{
+ 		display: none;
+ 	}
+ 	.order-form-wrap{
+ 		padding-right: 0;
+ 	}
+ 	.order-form .form-line{
+ 		//display: none;
+ 	}
+ 	.order-form{
+ 		padding: 20px 10px;
+ 	}
+ 		.order-form .form-line label{
+ 			display: block;
+ 			padding-bottom: 15px;
+ 		}
+ 		.order-form .input-wrap{
+ 			width: 100%;
+ 			padding-left: 0;
+ 			margin-left: 0;
+ 			margin-right: 0;
+ 			padding-right: 0;
+ 		}
+ 	.order-form .min-form-params .form-line{
+ 		display: block;
+ 		width: 100%;
+ 	}
+ 	.order-form .min-form-params .form-line:nth-child(2n) .input-wrap, .order-form .min-form-params .form-line:nth-child(2n-1) .input-wrap{
+ 		padding-left: 0;
+ 		padding-right: 0;
+ 	}
+ 	.order-form .send-copy{
+ 		display: none;
+ 	}
+		.order-form .buttons .btn_blue, .order-form .buttons .btn_red{
+			float: none;
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 17px;
+		}
+	.slider-width-desc{
+		padding: 0;
+	}
+	.slider-width-desc__text{
+		position: static;
+		width: 100%;
+		margin-left: 0;
+	}
+	.desc-tabs__tab_open{
+		@extend .desc-tabs__tab;
+	}
+	.desc-tabs__cont_inner{
+		padding: 0 10px;
+		display: none;
+		padding-bottom: 40px;
+	}
+	.desc-tabs__cont-wrap{
+		padding: 0;
+	}
+	.desc-tabs__tabs-line{
+		display: none;
+	}
+	.desc-tabs__cont{
+		display: block;
+		position: static;
+		padding-bottom: 0;
+	}
 }
 
 @include mq($max-width: 767px) {
@@ -249,8 +413,8 @@
 }
 
 @include mq($max-width: 600px) {
-	.second-menu-btn{
-  		padding: 25px  0;
+	.second-menu-btn{ 
+  		padding: 25px  0; 
   		.btn{
   			height: 110px;
   			padding: 0;

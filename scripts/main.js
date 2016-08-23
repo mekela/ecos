@@ -145,7 +145,7 @@ $(function() {
 	});
 
 	$(document).on("click", ".load_more_text", function() {
-		$(".main-description").addClass("active");
+		$(".main-description, .top-promo-blue").addClass("active");
 	});
 
 	// scroll header
@@ -165,8 +165,33 @@ $(function() {
 		dots: false,
 		arrows: true,
 		prevArrow: '<span class="icon-long-arr-l"></span>',
-		nextArrow: '<span class="icon-long-arr-r"></span>'
+		nextArrow: '<span class="icon-long-arr-r"></span>',
+		responsive: [
+		    {
+		      breakpoint: 1440,
+		      settings: {
+		        slidesToShow: 1,
+		      }
+		    },
+		    {
+		      breakpoint: 1024,
+		      settings: {
+		        slidesToShow: 1,
+		      }
+		    },
+		    {
+		      breakpoint: 768,
+		      settings: {
+		        slidesToShow: 1,
+		      }
+		    }
+		]
 	});
+
+	$( ".desc-tabs__tab_open" ).click(function() {
+		  $( this).next().slideToggle( "slow");
+	});
+
 	// switch .desc-tabs
 	$(".desc-tabs__tab").click(function() {
 		if(!$(this).hasClass("active")) {
