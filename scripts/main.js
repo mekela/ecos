@@ -63,7 +63,7 @@ $(function() {
 	});
 	// init .equipment-slider slick-slider
 	$(".equipment-slider").slick({
-		autoplay: true,
+		//autoplay: true,
 		autoplaySpeed: 3000,
 		speed: 500,
 		slidesToShow: 5,
