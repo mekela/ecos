@@ -191,6 +191,10 @@ $(function() {
 	$( ".desc-tabs__tab_open" ).click(function() {
 		  $( this).next().slideToggle( "slow");
 	});
+	$( ".contacts-list__items-group h2" ).click(function() {
+		  $( this).next().slideToggle( "slow");
+		  $( this).toggleClass( "active");
+	});
 
 	// switch .desc-tabs
 	$(".desc-tabs__tab").click(function() {
@@ -316,7 +320,27 @@ $(function() {
 		dots: false,
 		arrows: true,
 		prevArrow: '<span class="icon-long-arr-l"></span>',
-		nextArrow: '<span class="icon-long-arr-r"></span>'
+		nextArrow: '<span class="icon-long-arr-r"></span>',
+		responsive: [
+		    {
+		      breakpoint: 1440,
+		      settings: {
+		        slidesToShow: 3,
+		      }
+		    },
+		    {
+		      breakpoint: 1024,
+		      settings: {
+		        slidesToShow: 2,
+		      }
+		    },
+		    {
+		      breakpoint: 769,
+		      settings: {
+		        slidesToShow: 1,
+		      }
+		    }
+		]
 	});
 	// add block with count in .news-slider
 	$(".news-slider").each(function() {
@@ -351,7 +375,27 @@ $(function() {
 		dots: false,
 		arrows: true,
 		prevArrow: '<span class="icon-long-arr-l"></span>',
-		nextArrow: '<span class="icon-long-arr-r"></span>'
+		nextArrow: '<span class="icon-long-arr-r"></span>',
+		responsive: [
+		    {
+		      breakpoint: 1440,
+		      settings: {
+		        slidesToShow: 3,
+		      }
+		    },
+		    {
+		      breakpoint: 1024,
+		      settings: {
+		        slidesToShow: 2,
+		      }
+		    },
+		    {
+		      breakpoint: 769,
+		      settings: {
+		        slidesToShow: 1,
+		      }
+		    }
+		]
 	});
 	// add block with count in .video-slider
 	$(".video-slider").each(function() {
@@ -396,7 +440,7 @@ $(function() {
 		    {
 		      breakpoint: 768,
 		      settings: {
-		        slidesToShow: 1,
+		        slidesToShow: 2,
 		      }
 		    }
 		]
