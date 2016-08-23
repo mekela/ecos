@@ -6906,7 +6906,21 @@ footer .center-block .table {
     width: 100px;
     text-align: right; }
   .pagination a {
-    letter-spacing: 0; } }
+    letter-spacing: 0; }
+  .reviews-list {
+    text-align: justify; }
+    .reviews-list:after {
+      content: "";
+      display: inline-block;
+      height: 0;
+      width: 100%; }
+  .reviews-list__item-wrap {
+    width: 48%;
+    text-align: left; }
+    .reviews-list__item-wrap:nth-child(2n-1) {
+      margin-right: 0; }
+  .files-list__item {
+    margin-bottom: 25px; } }
 
 .load_more_text {
   display: none; }

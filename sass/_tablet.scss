@@ -601,4 +601,23 @@ footer .center-block .table {
 			letter-spacing: 0;
 		}
 	}
+	.reviews-list{
+		text-align: justify;
+		&:after{
+			content: "";
+			display: inline-block;
+			height: 0;
+			width: 100%;
+		}
+	}
+	.reviews-list__item-wrap{
+		width: 48%;
+		text-align: left;
+		&:nth-child(2n-1){
+			margin-right: 0;
+		}
+	}
+	.files-list__item{
+		margin-bottom: 25px;
+	}
 }
