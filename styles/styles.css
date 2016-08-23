@@ -6962,6 +6962,16 @@ footer .center-block .table {
   .tile-cont-img-wrap {
     color: #3d5567;
     padding-top: 50px; }
+    .tile-cont-img-wrap.mirr {
+      padding-top: 0; }
+      .tile-cont-img-wrap.mirr .tile-cont-img__item {
+        display: block; }
+        .tile-cont-img-wrap.mirr .tile-cont-img__item:nth-child(2n-1) .tile-cont-img__img, .tile-cont-img-wrap.mirr .tile-cont-img__item:nth-child(2n) .tile-cont-img__img {
+          padding-right: 50px;
+          padding-left: 50px; }
+        .tile-cont-img-wrap.mirr .tile-cont-img__item:nth-child(2n-1) .tile-cont-img__desc, .tile-cont-img-wrap.mirr .tile-cont-img__item:nth-child(2n) .tile-cont-img__desc {
+          padding-right: 50px;
+          padding-left: 50px; }
   .tile-cont-img__item {
     display: block; }
     .tile-cont-img__item .cell {
