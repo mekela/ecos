@@ -485,7 +485,27 @@ $(function() {
 		focusOnSelect: true,
 		arrows: true,
 		prevArrow: '<span class="icon-long-arr-l"></span>',
-		nextArrow: '<span class="icon-long-arr-r"></span>'
+		nextArrow: '<span class="icon-long-arr-r"></span>',
+		responsive: [
+		    {
+		      breakpoint: 1440,
+		      settings: {
+		        slidesToShow: 2,
+		      }
+		    },
+		    {
+		      breakpoint: 1024,
+		      settings: {
+		        slidesToShow: 2,
+		      }
+		    },
+		    {
+		      breakpoint: 769,
+		      settings: {
+		        slidesToShow: 1,
+		      }
+		    }
+		]
 	});
 	var popupSliderInner = $(".photo-popup-slider__inner");
 	if(popupSliderInner.length) {

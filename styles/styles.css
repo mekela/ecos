@@ -7051,7 +7051,9 @@ footer .center-block .table {
     float: none;
     width: 48%;
     margin-right: 0;
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .article-bottom-line {
+    margin-bottom: 0; } }
 
 .load_more_text {
   display: none; }
