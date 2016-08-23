@@ -1,6 +1,14 @@
 // Normally mainpage media styles
 // You can read about usage in https://github.com/paranoida/sass-mediaqueries 
 
+.two-block-img-text{
+	.two-block-img-text__desc{
+		img{
+			display: none;
+		}
+	}
+}
+
 footer .center-block .table {
   position: relative;
   display: block;
@@ -536,6 +544,9 @@ footer .center-block .table {
 }
 
 @include mq($max-width: 1339px){
+	.tablet-hidden{
+		display: none !important;
+	}
 	.center-block-min{
 		max-width: none;
 		padding: 0 50px;
@@ -729,6 +740,59 @@ footer .center-block .table {
 		}
 		&:last-child{
 			text-align: right;
+		}
+	}
+	.two-block-img-text{
+		display: block;
+		.cell{
+			display: block;
+			width: auto;
+			img{
+				display: block;
+				width: 100%;
+				margin-top: 40px;
+			}
+		}
+	}
+
+	.two-cols-table{
+		display: block;
+		&.table{
+			.cell{
+				width: auto;
+				display: block;
+			}
+			img{
+				display: block;
+				max-width: 500px;
+				margin: 0 auto;
+			}
+		}
+	}
+	.two-block-img-text{
+		.cell{
+			&:first-child, &:last-child{
+				padding: 0;
+			}
+		}
+	}
+	.square-list__item{
+		display: block;
+		width: auto;
+		min-height: 110px;
+		margin-bottom: 40px;
+		margin-top: 0;
+		&:nth-child(2n){
+			padding-left: 133px;
+			&>span{
+				left: 0;
+			}
+		}
+		&:nth-child(2n-1){
+			padding-right: 0;
+		}
+		&:last-child{
+			margin-bottom: 0;
 		}
 	}
 }
