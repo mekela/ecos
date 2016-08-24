@@ -6499,6 +6499,13 @@ footer .center-block .table {
 .two-block-img-text .two-block-img-text__desc img {
   display: none; }
 
+.projects-selects {
+  position: relative; }
+  .projects-selects:after {
+    content: '';
+    display: table;
+    clear: both; }
+
 footer .center-block .table {
   position: relative;
   display: block;
@@ -7159,6 +7166,28 @@ footer .center-block .table {
     margin-bottom: 0; }
   .team-contacts h2 {
     margin-bottom: 15px; }
+  .map-filters__half-line {
+    width: 50%; }
+    .map-filters__half-line:nth-child(2n-1) {
+      float: left;
+      padding-right: 20px; }
+    .map-filters__half-line:nth-child(2n) {
+      float: right;
+      padding-left: 20px; }
+  .map-filters__label {
+    display: table-cell;
+    vertical-align: middle;
+    width: 180px; }
+  .map-filters .select-wrap {
+    display: table-cell;
+    vertical-align: middle;
+    width: auto; }
+  .select-val {
+    white-space: nowrap; }
+  .projescts-res-filters__item:nth-child(2n-1) {
+    padding-right: 20px; }
+  .projescts-res-filters__item:nth-child(2n) {
+    padding-left: 20px; }
   /*.popup-feedback{
 		overflow-y: scroll;
 	}*/

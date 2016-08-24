@@ -825,8 +825,6 @@ $(function() {
    	iconsSliders();
 
 
-   	console.log($(window).width());
-
 });
 function setInfoDataSlider(slider, object) {
 	slider.each(function() {
