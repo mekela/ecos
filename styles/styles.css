@@ -7096,8 +7096,29 @@ footer .center-block .table {
     margin: 0 auto; }
   .float-butt.fixed {
     top: 65px; }
+  .ill {
+    padding: 0 50px; }
+  .ill__image {
+    text-align: center; }
+    .ill__image img {
+      max-width: 100%; }
+  .proj__big-ill {
+    padding: 0 50px; }
+  .ill__image-2, .ill__image-3 {
+    position: relative;
+    top: 0;
+    left: auto;
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 40px 50px 0; }
+  .proj__ill-2, .proj__ill-4 {
+    margin: 40px auto 0; }
+  .proj__ill-3 {
+    margin: 0 auto; }
   .proj__cont {
-    padding: 60px 50px 40px; }
+    padding: 40px 50px; }
+  .prtable {
+    margin-bottom: 40px; }
   .prhidden {
     display: none; }
   .proj__more {
