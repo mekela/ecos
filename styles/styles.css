@@ -6875,6 +6875,8 @@ footer .center-block .table {
     width: auto; } }
 
 @media only screen and (max-width: 1339px) {
+  h1 {
+    letter-spacing: -0.01em; }
   .tablet-hidden {
     display: none !important; }
   .center-block-min {
@@ -7122,7 +7124,46 @@ footer .center-block .table {
   .prhidden {
     display: none; }
   .proj__more {
-    display: block; } }
+    display: block; }
+  .links-list.push-right {
+    margin-left: 60px; }
+  .company-col-1 {
+    width: 48%; }
+  .company-col-2 {
+    width: 52%;
+    padding-left: 90px; }
+  .company-col-2__line {
+    left: 33px; }
+  .company-col-2__block {
+    padding: 25px 50px 30px 40px;
+    margin-bottom: 40px; }
+    .company-col-2__block:before {
+      top: 50%;
+      margin-top: -30px; }
+    .company-col-2__block .isotope {
+      top: 50%;
+      margin-top: -5px; }
+  .company-col-1__img-block {
+    height: 540px; }
+  .CEO-block {
+    min-height: 800px;
+    padding-bottom: 40px; }
+  .CEO_quote {
+    top: 580px;
+    bottom: auto; }
+  .team-slider__desc {
+    margin-bottom: 20px; }
+  .team-contacts-list__phone:before, .team-contacts-list__mail:before, .team-contacts-list__address:before {
+    content: none; }
+  .team-contacts-list__phone {
+    margin-bottom: 0; }
+  .team-contacts h2 {
+    margin-bottom: 15px; }
+  /*.popup-feedback{
+		overflow-y: scroll;
+	}*/
+  .popup-feedback__form-wrap {
+    margin-bottom: 40px; } }
 
 .load_more_text {
   display: none; }

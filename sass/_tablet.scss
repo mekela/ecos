@@ -544,6 +544,9 @@ footer .center-block .table {
 }
 
 @include mq($max-width: 1339px){
+	h1{
+		letter-spacing: -0.01em;
+	}
 	.tablet-hidden{
 		display: none !important;
 	}
@@ -919,5 +922,67 @@ footer .center-block .table {
 	}
 	.proj__more{
 		display: block;
+	}
+	.links-list{
+		&.push-right{
+			margin-left: 60px;
+		}
+	}
+	.company-col-1{
+		width: 48%;
+	}
+	.company-col-2{
+		width: 52%;
+		padding-left: 90px;
+	}
+	.company-col-2__line{
+		left: 33px;
+	}
+	.company-col-2__block{
+		padding: 25px 50px 30px 40px;
+		margin-bottom: 40px;
+		&:before{
+			top: 50%;
+			margin-top: -30px;
+		}
+		.isotope{
+			top: 50%;
+			margin-top: -5px;
+		}
+	}
+	.company-col-1__img-block{
+		height: 540px;
+	}
+	.CEO-block{
+		min-height: 800px;
+		padding-bottom: 40px;
+	}
+	.CEO_quote{
+		top: 580px;
+		bottom: auto;
+	}
+	.team-slider__desc{
+		margin-bottom: 20px;
+	}
+	.team-contacts-list__phone, .team-contacts-list__mail, .team-contacts-list__address{
+		&:before{
+			content: none;
+		}
+	}
+	.team-contacts-list__phone{
+		margin-bottom: 0;
+	}
+	.team-contacts{
+		h2{
+			margin-bottom: 15px;
+		}
+	}
+
+
+	/*.popup-feedback{
+		overflow-y: scroll;
+	}*/
+	.popup-feedback__form-wrap{
+		margin-bottom: 40px;
 	}
 }
