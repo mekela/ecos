@@ -825,7 +825,7 @@ $(function() {
    	iconsSliders();
 
 
-
+   	console.log($(window).width());
 
 });
 function setInfoDataSlider(slider, object) {
@@ -891,6 +891,7 @@ function setSliderSizes() {
 	$(".photo-slider-min__img").height(minImgH);
 	$(".photo-slider-max-wrap").width(maxSliderW);
 	$(".photo-slider-min-wrap").width(maxSliderW + 40);
+	//console.log(maxImgH + ' / ' +  minImgH + ' / ' + maxSliderW);
 }
 function initSelect() {
     $(".select-wrap select").each(function() {
