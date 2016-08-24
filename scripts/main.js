@@ -445,16 +445,21 @@ $(function() {
 		    }
 		]
 	});
-	/*$(".icons-slider").each(function() {
+	$(".icons-slider").each(function() {
 		var slider = $(this);
 		var counterBlock = $("<div class='slick-counter'></div>");
-		var allItems = slider.find(".icons-slider-item:not(.slick-cloned):last").data("slick-index") + 1;
-		var nowItem = slider.find(".icons-slider-item.slick-current").data("slick-index");
+		var allItems = slider.find(".icons-slider__item-wrap:not(.slick-cloned):last").data("slick-index") + 1;
+		var nowItem = slider.find(".icons-slider__item-wrap.slick-current").data("slick-index");
 		nowItem++;
 		var resultText = nowItem + " / " + allItems;
 		counterBlock.text(resultText);
 		slider.append(counterBlock);
-	});*/
+	});
+	$(".icons-slider").on('beforeChange', function(event, slick, currentSlide, nextSlide){
+		var text = (nextSlide + 1) + " / " + slick.slideCount;
+		$(this).find(".slick-counter").text(text);
+	});
+
 	// switch .reviews-list__item
 	$(".reviews-list__link").on("click", function() {
 		$(this).closest(".reviews-list__item-wrap").toggleClass("show");
