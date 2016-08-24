@@ -824,7 +824,6 @@ $(function() {
    	});
    	iconsSliders();
 
-
 });
 function setInfoDataSlider(slider, object) {
 	slider.each(function() {

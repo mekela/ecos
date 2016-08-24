@@ -996,19 +996,17 @@ footer .center-block .table {
 		}
 	}
 		.map-filters__label{
-			display: table-cell;
-			vertical-align: middle;
 			width: 180px;
 		}
 		.map-filters{
 			.select-wrap{
-				display: table-cell;
-				vertical-align: middle;
-				width: auto;
+				width: 50%;
 			}
 		}
 		.select-val{
 			white-space: nowrap;
+			padding: 0 40px 0 20px;
+			text-overflow: ellipsis;
 		}
 	.projescts-res-filters__item{
 		&:nth-child(2n-1){
