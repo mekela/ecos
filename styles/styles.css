@@ -7257,7 +7257,12 @@ footer .center-block .table {
 		overflow-y: scroll;
 	}*/
   .popup-feedback__form-wrap {
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+  .history-page__imwr {
+    float: none;
+    width: auto;
+    text-align: center;
+    margin-right: 0; } }
 
 .load_more_text {
   display: none; }
