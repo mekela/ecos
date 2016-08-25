@@ -1195,10 +1195,30 @@ footer .center-block .table {
 				}
 			}
 		}
-
-	/*.popup-feedback{
-		overflow-y: scroll;
-	}*/
+	
+	.head-search-form{
+		top: 37px;
+		right: 90px;
+		&.active{
+			width: 640px;
+		}
+	}
+	.header{
+		&.fixed{
+			.head-search-form{
+				top: 7px;
+			}
+		}
+	}
+	
+	.popup-feedback{
+		padding: 0;
+	}
+	.popup-wrapper{
+		height: 100%;
+		padding: 60px 40px 40px;
+		overflow-y: auto;
+	}
 	.popup-feedback__form-wrap{
 		margin-bottom: 40px;
 	}
