@@ -451,6 +451,15 @@ footer .center-block .table {
 		.btn_blue{
 			right: -50px;
 		}
+		.btn{
+			&.btn_mirr{
+				padding: 27px 85px 30px 5px;
+				span{
+					right: 0;
+					left: auto;
+				}
+			}
+		}
 	}
 	.contacts-block-bg{
 		left: 0;
@@ -677,19 +686,27 @@ footer .center-block .table {
 				height: 245px;
 			}
 			.video-list__title{
+				position: static;
 				font-size: 14px;
 				line-height: 18px;
+				p{
+					margin-bottom: 0;
+				}
 			}
 			.video-list__info{
 				.cell{
+					position: relative;
 					height: 80px;
 					padding: 15px 20px;
 				}
 			}
 			.video-list__date{
-				bottom: 3px;
+				top: 50%;
+				bottom: auto;
 				width: 100px;
+				line-height: 20px;
 				text-align: right;
+				margin-top: -20px;
 			}
 	.pagination{
 		a{
@@ -1221,5 +1238,10 @@ footer .center-block .table {
 	}
 	.popup-feedback__form-wrap{
 		margin-bottom: 40px;
+	}
+	h1{
+		br{
+			display: none;
+		}
 	}
 }

@@ -836,7 +836,7 @@ $(function() {
 
    	function smplSlider(){
    		var $window = $(window).width();
-   		if ($window < 1340 && $window > 1023) {
+   		if ($window < 1340 && $window > 1000) {
    			$('.smpl-txt-sldr-count').css({
    				'width': ($window - 50)/2,
    			});
@@ -884,6 +884,21 @@ $(function() {
    			$(this).find('.accordion-body').slideUp(300);
    		}
    	});
+
+   	function delSlash(){
+   		var $window = $(window).width();
+   		$('.video-list__date').each(function(index, el) {
+   			if ($window < 1340) {
+   				$(this).text(function(index, text) {
+					return text.replace('/', '');
+				});
+   			}
+   		});
+   	}
+   	$(window).resize(function(event) {
+   		delSlash();
+   	});
+   	delSlash();
 
 });
 function setInfoDataSlider(slider, object) {

@@ -6826,6 +6826,11 @@ footer .center-block .table {
     overflow: visible; }
     .contacts-block .btn_blue {
       right: -50px; }
+    .contacts-block .btn.btn_mirr {
+      padding: 27px 85px 30px 5px; }
+      .contacts-block .btn.btn_mirr span {
+        right: 0;
+        left: auto; }
   .contacts-block-bg {
     left: 0;
     right: 30px;
@@ -6967,15 +6972,22 @@ footer .center-block .table {
   .video-list__img {
     height: 245px; }
   .video-list__title {
+    position: static;
     font-size: 14px;
     line-height: 18px; }
+    .video-list__title p {
+      margin-bottom: 0; }
   .video-list__info .cell {
+    position: relative;
     height: 80px;
     padding: 15px 20px; }
   .video-list__date {
-    bottom: 3px;
+    top: 50%;
+    bottom: auto;
     width: 100px;
-    text-align: right; }
+    line-height: 20px;
+    text-align: right;
+    margin-top: -20px; }
   .pagination a {
     letter-spacing: 0; }
   .reviews-list {
@@ -7335,7 +7347,9 @@ footer .center-block .table {
     padding: 60px 40px 40px;
     overflow-y: auto; }
   .popup-feedback__form-wrap {
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+  h1 br {
+    display: none; } }
 
 .load_more_text {
   display: none; }
