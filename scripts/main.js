@@ -1,3 +1,8 @@
+// $(document).on("click", ".load_more_text", function() {
+// 	$(".top-promo-blue").addClass("active");
+// });
+//.main-description,
+
 // Avoid `console` errors in browsers that lack a console.
 if (!(window.console && console.log)) {
 	(function() {
@@ -12,7 +17,20 @@ if (!(window.console && console.log)) {
 }
 var startTablet = 961;
 var startMobile = 622;
+
+
+$(document).ready(function() {
+	$( ".load_more_text" ).click(function() {
+	  $(".main-description, .top-promo-blue").addClass("active");
+	  $(this).hide();
+	});	
+});
+
+
 $(function() {
+
+
+
 	setMainPromoSliderWidth();
 	setProjectsSlidersW()
 	$(window).resize(function() {
@@ -144,9 +162,7 @@ $(function() {
 		$(".head-search-form").removeClass("active");
 	});
 
-	$(document).on("click", ".load_more_text", function() {
-		$(".main-description, .top-promo-blue").addClass("active");
-	});
+	
 
 	// scroll header
     headerScroll();
@@ -187,9 +203,32 @@ $(function() {
 		    }
 		]
 	});
+	// add block with count in .smpl-txt-sldr-count
+	$(".slider-width-desc").each(function() {
+		var slider = $(this);
+		var counterBlock = $("<div class='slick-counter'></div>");
+		var allItems = slider.find(".slider-width-desc__item:not(.slick-cloned):last").data("slick-index") + 1;
+		var nowItem = slider.find(".slider-width-desc__item.slick-current").data("slick-index");
+		nowItem++;
+		var resultText = nowItem + " / " + allItems;
+		counterBlock.text(resultText);
+		slider.append(counterBlock);
+	});
+	$(".slider-width-desc").on('beforeChange', function(event, slick, currentSlide, nextSlide){
+		var allItems = $(this).find(".slider-width-desc__item:not(.slick-cloned):last").data("slick-index") + 1;
+		var text = (nextSlide + 1) + " / " + allItems;
+		$(this).find(".slick-counter").text(text);
+	});
+
+
+
 
 	$( ".desc-tabs__tab_open" ).click(function() {
 		  $( this).next().slideToggle( "slow");
+	});
+	$( ".mobile_colapsed_table_trigger" ).click(function() {
+		  $( this).next().slideToggle( "slow");
+		  $( this).toggleClass( "active");
 	});
 	$( ".contacts-list__items-group h2" ).click(function() {
 		  $( this).next().slideToggle( "slow");
