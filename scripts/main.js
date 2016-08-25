@@ -672,6 +672,10 @@ $(function() {
 		e.preventDefault();
 		$(".popup-feedback").addClass("active");
 	});
+	$('body').delegate('.head-icons-wrap .icon-message, .foot-links-block .icon-message, .foot-links-block .icon-message + a', 'click', function(e) {
+   		e.preventDefault();
+		$(".popup-feedback").addClass("active");
+	});
 	$(".popup-feedback .icon-close").click(function() {
 		$(this).closest(".popup-feedback").removeClass("active");
 	});
