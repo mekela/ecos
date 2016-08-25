@@ -12,6 +12,9 @@
 .desc-tabs__tab_open{
 	display: none;
 }
+.slider-width-desc .slick-counter{
+	display: none;
+}
 
 @include mq($max-width: 768px) {
 .hide_mobile{
@@ -442,7 +445,9 @@
 	}
 	.desc-tabs__tab_open{
 		@extend .desc-tabs__tab;
-		display: table-cell;
+		display: block;
+		width: 100%;
+		line-height: 80px;
 		border-bottom: 1px solid #fff;
 		background-image: url(../images/arrow_bottom.png);
 		background-position: center right 11px;
@@ -947,6 +952,7 @@
     bottom: 0px;
     z-index: 1000;
     width: 80px;
+    display: block;
     height: 80px;
     background-color: #58b6e7;
     font-family: "Circe";
@@ -986,6 +992,61 @@
 		font-size: 14px;
 		line-height: 1.5;
 		display: none;
+	}
+
+	.tile-cont-img__desc p, .tile-cont-img__item .simple-ul{
+		font-size: 14px;
+	}
+
+	//megapolis
+	.two-block-img-text__desc, .two-cols-table.table .cell, .two-cols-table.table .cell:first-child{
+		padding: 20px 10px;
+	}
+
+	//article
+	.tile-cont-img__desc p{
+		margin-bottom: 9px;
+	}
+	.tile-cont-img__normal.push-bottom{
+		padding: 25px 10px !important;
+		position: relative;
+		overflow: hidden;
+	}
+
+	//2project
+	.float-butt.fixed{
+		position: static;
+	}
+	.banntop{
+		img{
+			width: 100%;
+		}
+	}
+	.banntop__content{
+		margin-left: 0;
+		h1{
+			font-size: 26px;
+		}
+		p{
+			font-size: 14px;
+		}
+	}
+	.proj__head-in{
+		padding: 20px 10px;
+	}
+	.proj__one{
+		padding: 10px;
+		padding-top: 0;
+	}
+	.proj__col-1, .proj__col-2, .proj__item:nth-child(2n+1) .proj__col-1 {
+		padding: 10px;
+		padding-top: 0;
+	}
+	.proj__item{
+		margin-bottom: 0;
+	}
+	.ill__image-2, .ill__image-3{
+		margin: 5px;
 	}
 
 }
@@ -1055,5 +1116,13 @@
   		position: static;
   		padding-top: 20px;
   		display: block;
+  	}
+  	.photo-list__item{
+  		width: 100%;
+  		display: block;
+  	}
+  	.photo-list__name{
+  		padding: 0 10px;
+  		font-size: 12px;
   	}
 }
