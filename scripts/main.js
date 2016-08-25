@@ -868,6 +868,19 @@ $(function() {
    	});
    	iconsSliders();
 
+   	$('.table-accordion li').click(function(event) {
+   		if (!$(this).hasClass('active')) {
+   			$('.table-accordion li').removeClass('active');
+   			$(this).addClass('active');
+   			$('.accordion-body').slideUp(300);
+   			$(this).find('.accordion-body').slideDown(300);
+   		} 
+   		else {
+   			$(this).removeClass('active');
+   			$(this).find('.accordion-body').slideUp(300);
+   		}
+   	});
+
 });
 function setInfoDataSlider(slider, object) {
 	slider.each(function() {
