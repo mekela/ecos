@@ -176,6 +176,9 @@ footer .center-block .table {
 	cursor: pointer;
 	z-index: 50;
 }
+.show_tablet{
+	display: none !important;
+}
 
 //ширина на якій починаються проблеми
 @include mq($min-width: 1440px) {
@@ -702,6 +705,7 @@ footer .center-block .table {
 			}
 			.video-list__date{
 				top: 50%;
+				right: 15px;
 				bottom: auto;
 				width: 100px;
 				line-height: 20px;
@@ -827,7 +831,7 @@ footer .center-block .table {
 			}
 			img{
 				display: block;
-				max-width: 500px;
+				max-width: 690px;
 				margin: 0 auto;
 			}
 		}
@@ -1242,6 +1246,83 @@ footer .center-block .table {
 	h1{
 		br{
 			display: none;
+		}
+	}
+}
+@include mq($max-width: 1339px, $min-width: 1024px){
+	.show_mobile{
+		display: none !important;
+	}
+	.hide_tablet{
+		display: none !important;
+	}
+	.show_tablet{
+		display: block !important;
+	}
+	.fixed-height{
+		height: 160px;
+		overflow: hidden;
+	}
+	.top-promo-blue{
+		padding-top: 35px;
+		.table{
+			display: flex;
+			justify-content: space-between;
+			margin-top: 35px;
+			.cell{
+				width: 50%;
+				&:first-child{
+					overflow: hidden;
+				}
+			}
+		}
+		h1{
+			margin-bottom: 30px;
+		}
+	}
+	.icons-slider__item-wrap{
+		img{
+			float: none;
+			width: 76px;
+			margin-bottom: 10px;
+		}
+		.icons-slider__title{
+			display: block;
+		}
+	}
+	.smpl-view-inline__min-desc{
+		max-height: 72px;
+		overflow: hidden;
+	}
+	.solutions-list__item{
+		min-height: 350px;
+	}
+	.press-slider-wrap{
+		&.fix-height{
+			min-height: auto;
+			height: 380px;
+			.video-slider, .icons-slider{
+				height: 215px;
+			}
+		}
+	}
+	.history-page__item_first{
+		margin-top: 60px;
+	}
+	.history-page__in{
+		min-height: auto;
+	}
+	.history-page__content{
+		p{
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+	.tile-cont-img__normal{
+		&.push-bottom{
+			padding-top: 0;
+			padding-bottom: 20px;
 		}
 	}
 }
