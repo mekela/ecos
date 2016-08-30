@@ -21,7 +21,7 @@ var startMobile = 622;
 
 $(document).ready(function() {
 	$( ".load_more_text" ).click(function() {
-	  $(".main-description, .top-promo-blue").addClass("active");
+	  $(".main-description, .top-promo-blue, .team-slider .table").addClass("active");
 	  $(this).hide();
 	});	
 });
