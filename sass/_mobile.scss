@@ -886,8 +886,11 @@
 			margin-left: 10px !important; 
 		}
 	}
-	.two-block-img-text__desc p, .table.two-cols-table p, .table.two-cols-table ul{
+	.two-block-img-text__desc p, .table.two-cols-table p, .table.two-cols-table ul, ul.simple-ul.push-right{
 		color: #3d5567;
+		font-size: 14px;
+	}
+	.simple-ul li{
 		font-size: 14px;
 	}
 	.address-list__item-wrap{
@@ -903,6 +906,9 @@
 		float: none;
 		position: static;
 		width: 100% !important;
+	}
+	.example-block2.example-block2_mirr{
+		margin-bottom: 20px;
 	}
 
 	//search
